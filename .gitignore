@@ -1,0 +1,43 @@
+# Visual Studio Code
+.vscode/
+
+# Carpeta de compilación
+bin/
+obj/
+
+# Archivos y carpetas de usuario
+*.user
+*.suo
+*.cache
+*.log
+*.vs
+.DS_Store
+
+# Dependencias y paquetes de NuGet
+*.dll
+*.pdb
+*.zip
+*.exe
+/packages/
+!package-lock.json
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio IntelliSense
+*.vscode/
+*.suo
+*.sln.docstates
+*.userprefs
