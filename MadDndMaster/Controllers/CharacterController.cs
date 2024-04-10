@@ -18,7 +18,7 @@ namespace MadDndMaster.Controllers
             _characterService = characterService;
         }
 
-        [SwaggerOperation(Description = "Get all classes")]
+        [SwaggerOperation(Summary = "Get all classes")]
         [SwaggerResponse(200, "OK", typeof(IEnumerable<ClassModel>))]
         [SwaggerResponse(400, "Error", typeof(string))]
         [HttpGet]

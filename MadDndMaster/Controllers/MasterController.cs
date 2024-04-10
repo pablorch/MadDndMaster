@@ -2,6 +2,7 @@
 using MadDndMaster.Dnd.Model;
 using MadDndMaster.Resources;
 using MadDndMaster.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
@@ -39,7 +40,7 @@ namespace MadDndMaster.Controllers
         [SwaggerOperation(Summary = "Annihilate all characters")]
         [SwaggerResponse(200, "OK", typeof(string))]
         [SwaggerResponse(400, "Error", typeof(string))]
-        [HttpGet]
+        [HttpGet, Authorize]
         public async Task<ActionResult> MeteorShower()
         {
             try
